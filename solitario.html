@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Solitario web</title>
+<link rel="stylesheet" href="tableroSolitario.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="cronometro.js"></script>
+<script type="text/javascript" src="solitario.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+   crearCartas();
+   InicializarCrono();
+});
+</script>
+</head>
+
+<div id="todo">
+
+  <!-- Encabezado de la página -->
+  <div id="centro">
+  <header>
+    <center><img src="fondo/encabezado-solitario.png" onclick="hasGanado()"></center>
+  </header>
+
+  <!-- Barra de Navegación -->
+  <nav>
+    <ul class="kwicks horizontal" >
+          <li id="menu1"><a href="consulta_solitario.php">Puntuaciones</a></li>
+          <li id="menu2"><a href="creditos.html">Cr&eacute;ditos</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Cuerpo de la página -->
+  <body background="fondo/lobo-solitario.jpg">
+
+
+      <center>
+      <!--division principal del juego de solitario-->
+      <div id="tablero" onclick="debug()">
+        <div id="divTiempo"></div>
+        <div id="divPuntuacion">Puntos: 0</div>
+        <div id="nuevoJuego"><input type="button" value="Nuevo Juego" onclick="nuevoJuego()"></div>
+        <div id="mazoPrincipal"  class="cTablero" onclick="regresarCartasMazoPrincipal()"></div>
+        <div id="mazoSecundario" class="cTablero"></div>
+        <div id="pila1" class="cTablero" onclick="clicPilaAlta()"></div>
+        <div id="pila2" class="cTablero" onclick="clicPilaAlta()"></div>
+        <div id="pila3" class="cTablero" onclick="clicPilaAlta()"></div>
+        <div id="pila4" class="cTablero" onclick="clicPilaAlta()"></div>
+      </div>
+      </center>
+
+  </body>
+  
+  </div>
+</div>
+
+</html>

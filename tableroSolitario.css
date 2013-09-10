@@ -1,0 +1,102 @@
+#tablero{
+	position: relative; width: 818px; height: 600px;
+  margin: 0 auto;
+}
+
+.cTablero {
+	position: absolute; border: 2px solid black; width: 97px; height: 151px;
+}
+
+#divTiempo{
+	position: absolute; border: 2px solid black; width: 200; height: 20px; left: 15px; top: 15px;
+}
+#divPuntuacion{
+	position: absolute; border: 2px solid black; width: 200; height: 20px; left: 230px; top: 15px;
+}
+#nuevoJuego{
+	position: absolute; left: 500px; top: 13px;
+}
+#mazoPrincipal{
+	left: 15px; top: 50px;
+}
+#mazoSecundario{
+	left: 130px; top: 50px;
+}
+
+#pila1{
+	left: 360px; top: 50px;
+}
+#pila2{
+	left: 475px; top: 50px;
+}
+#pila3{
+	left: 590px; top: 50px;
+}
+#pila4{
+	left: 705px; top: 50px;
+}
+
+#col1{
+	left: 15px; top: 235px;
+}
+#col2{
+	left: 130px; top: 235px;
+}
+#col3{
+	left: 245px; top: 235px;
+}
+#col4{
+	left: 360px; top: 235px;
+}
+#col5{
+	left: 475px; top: 235px;
+}
+#col6{
+	left: 590px; top: 235px;
+}
+#col7{
+	left: 705px; top: 235px;
+}
+
+#info{
+	position: relative;
+}
+
+li{
+  background: url(fondo/boton.png) left top;
+  display: inline-block;
+  width: 130px;
+	height: 30px;
+	padding: 9px 0px 0px 0px;
+  text-align: center;
+}
+
+#divJuego{
+ position: relative;
+ top: 30px;
+ width: 100%;
+ padding: 30px;
+}
+
+#todo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#centro{
+  position: relative;
+  width: 1100px;
+  height: 1500px;
+  margin: 0 auto;
+  background: url(fondo/fondo-transparente.png);
+}
+
+nav{
+  padding: 10px;
+  background: #0000ff url(fondo/img01.png);
+}
+#f{
+display: "none";
+}
